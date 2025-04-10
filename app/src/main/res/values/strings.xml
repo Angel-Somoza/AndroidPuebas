@@ -1,12 +1,3 @@
 <resources>
     <string name="app_name">AndroidPuebas</string>
-    <color name="orange">#FF5722</color>
-    <color name="primary_dark">#E64A19</color>
-    <color name="accent">#FF5722</color>
-    <color name="backgroundwhite">#FFFFFF</color>
-    <color name="text_primary">#212121</color>
-    <color name="text_secondary">#757575</color>
-    <color name="black">#000000</color>
-    <color name="primary">#6200EE</color>
-    <color name="background">#FFFFFF</color>
 </resources>
