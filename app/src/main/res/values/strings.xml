@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">AndroidPuebas</string>
+    <string name="password">Contraseña</string>
 </resources>
