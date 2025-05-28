@@ -1,4 +1,4 @@
-package com.example.androidpuebas.View.Register.Activities
+package com.example.androidpuebas.Register.Activities
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

@@ -1,7 +1,7 @@
-package com.example.androidpuebas.View.ListRoutes.Activities
+package com.example.androidpuebas.ListRoutes.Activities
 import com.example.androidpuebas.databinding.ActivityListRouteBinding
 import com.example.androidpuebas.databinding.ActivityLoginBinding
-import com.example.androidpuebas.View.ListRoutes.ViewModel.ListRouteViewModel
+import com.example.androidpuebas.ListRoutes.ViewModel.ListRouteViewModel
 import android.os.Bundle
 import androidx.activity.viewModels
 import androidx.appcompat.app.AppCompatActivity
@@ -16,7 +16,6 @@ class ListRouteActivity : AppCompatActivity() {
         binding = ActivityListRouteBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        // Observar el mensaje del ViewModel
         viewModel.message.observe(this) { message ->
             binding.textView.text = message
         }

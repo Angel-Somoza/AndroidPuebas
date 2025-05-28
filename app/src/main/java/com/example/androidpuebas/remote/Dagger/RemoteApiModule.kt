@@ -1,5 +1,6 @@
-package com.example.androidpuebas.View.remote.Dagger
-import com.example.androidpuebas.View.remote.services.ApiServiceLH
+package com.example.androidpuebas.remote.Dagger
+import com.example.androidpuebas.remote.services.ApiServiceLH
+import com.example.androidpuebas.remote.services.AuthApiService
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -15,7 +16,7 @@ object RemoteApiModule {
     @Singleton
     fun provideRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("http://192.168.1.36:3000/") // Dirección localhost para emulador
+            .baseUrl("http://172.20.10.7:3000/")
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
@@ -23,5 +24,11 @@ object RemoteApiModule {
     @Singleton
     fun provideApiServiceLh(retrofit: Retrofit): ApiServiceLH {
         return retrofit.create(ApiServiceLH::class.java)
+    }
+
+    @Provides
+    @Singleton
+    fun provideAuthApiService(retrofit: Retrofit): AuthApiService {
+        return retrofit.create(AuthApiService::class.java)
     }
 }

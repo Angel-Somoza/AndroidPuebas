@@ -1,8 +1,8 @@
-package com.example.androidpuebas.View.model
+package com.example.androidpuebas.model
 
 import com.google.gson.annotations.SerializedName
 
 data class User(
-    @SerializedName("mensaje")
+    @SerializedName("menssage")
     val menssage: String
 )

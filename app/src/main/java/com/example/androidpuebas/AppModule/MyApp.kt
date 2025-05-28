@@ -1,4 +1,4 @@
-package com.example.androidpuebas.View.AppModule
+package com.example.androidpuebas.AppModule
 import android.app.Application
 import dagger.hilt.android.HiltAndroidApp
 
