@@ -11,7 +11,7 @@ import javax.inject.Singleton
 class AuthRepository @Inject constructor(
     private val authApiService: AuthApiService
 ) {
-    suspend fun login(usuario: String, password: String): Response<LoginResponse> {
+    suspend fun login(usuario: String, password: String): Response<LoginResponse> {// funcion que retorna el apiservice del login
         return authApiService.login(LoginRequest(usuario, password))
     }
 }

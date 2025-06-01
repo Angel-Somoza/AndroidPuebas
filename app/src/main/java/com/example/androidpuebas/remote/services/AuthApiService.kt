@@ -8,6 +8,7 @@ import retrofit2.http.POST
 
 
 interface AuthApiService {
-    @POST("api/login")
+    @POST("api/login")// Es el post que se va a mandar al backend
     suspend fun login(@Body loginRequest: LoginRequest): Response<LoginResponse>
+    // el cuerpo login req, login res
 }

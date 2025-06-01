@@ -16,7 +16,7 @@ object RemoteApiModule {
     @Singleton
     fun provideRetrofit(): Retrofit {
         return Retrofit.Builder()
-            .baseUrl("http://172.20.10.7:3000/")
+            .baseUrl("http://192.168.97.164:3000/")// cambiar la ip si es necesario o se cambia
             .addConverterFactory(GsonConverterFactory.create())
             .build()
     }
@@ -28,7 +28,7 @@ object RemoteApiModule {
 
     @Provides
     @Singleton
-    fun provideAuthApiService(retrofit: Retrofit): AuthApiService {
+    fun provideAuthApiService(retrofit: Retrofit): AuthApiService {// returnamos el api services del login
         return retrofit.create(AuthApiService::class.java)
     }
 }
